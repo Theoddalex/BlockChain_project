@@ -67,10 +67,10 @@ function logOut() {
 
   // Check if the current page is not the login page
   if (
-    currentPage.indexOf("Login.html") === -1 &&
+    currentPage.indexOf("login.html") === -1 &&
     currentPage.indexOf("RestoreAccount.html") === -1
   ) {
-    window.location.href = "Login.html"; // redirect to login page
+    window.location.href = "login.html"; // redirect to login page
   }
 }
 
@@ -197,7 +197,7 @@ function checkLoginStatus() {
     getAVAXBalance();
   } else {
     document.getElementById("loginStatus").innerHTML = "Log in to use the wallet";
-    window.location.href = "Login.html";
+    window.location.href = "login.html";
   }
 }
 
